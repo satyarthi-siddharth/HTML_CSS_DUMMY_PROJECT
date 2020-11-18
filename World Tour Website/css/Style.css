@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ################################# html element styling ################################### */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 900;
+}
+
+/* ########################################## utility classes #################################### */
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.btm{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    text-decoration: none;
+}
+
+.btm-primary{
+    background-color: #ffffff;
+    color: red;
+    border-radius: 100px;
+}
+
+.btm-primary:hover{
+    background-color: #dddddd;
+}
+
+.btm-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: #ffffff;
+
+}
+
+.btm-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+div.header-content a.btm-primary{
+    text-align: center;
+}
+
+/* ################################### header styling ################################### */
+
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1.logo{
+    color:white;
+}
+
+.navbar .nav-items{
+    float: right;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+
+li:hover{
+    border-bottom: 0.3rem solid white;
+}
+
+nav.navbar h1.logo{
+    margin-left: 0rem;
+    margin-top: 3rem ;
+
+}
+
+/* .navbar{
+    border: 2px solid white;
+} */
+
+li.nav-item{
+    display: inline-block;  
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+ul.nav-items{
+    margin-right: 0rem;
+    margin-top: 3rem;
+}
+
+li.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ######################################### header content styling ################################# */
+
+.header-content{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+div.header-content h1{
+    text-transform: uppercase;
+}
+
+div.header-content p{
+    text-transform: uppercase;
+}
+
+/* ############################# showcase section styling ############################### */
+
+.showcase{
+    background: #dddddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.438);
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.text-box h2{
+    padding: 1rem;
+}
+
+div.text-box p{
+    padding-left: 1rem ;
+}
+
+div.text-box a{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+div.row::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+/* ################################ Features Section Styling ################################## */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.527);
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box1, .box3{
+    background-color: #263238;
+    color: white;
+}
+
+.box2{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #ffffff;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #################################### Footer Styling ################################### */
+
+.footer{
+    background-color: #263238;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media i{
+    margin: 2rem;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ##################################### About Page Styling ######################## */
+
+.about{
+    padding: 5rem 0;
+}
+
+/* .about-heading{
+    border-bottom: 6px solid #e63946;
+} */
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+/* ######################### About Wrapper Styling ######################### */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* ######################################### Count Styling ############################## */
+
+.counts{
+    margin-top: 3rem;
+}
+
+.count-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+/* ################################## Banner Styling #################################### */
+
+.cta-banner{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #0000006e;
+    margin-top: 3rem;
+}
+
+.cta-left{
+    width: 65%;
+    float: left;
+}
+
+.cta-right{
+    width: 35%;
+    float: right;
+}
+
+.cta-right a{
+    text-decoration: none;
+}
+
+.cta-right a:hover{
+    text-decoration: underline;
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+}
+
+.btm-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.2rem;
+    color: #f4f4f4;
+}
+
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################################# Contact Page Styling ########################## */
+
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper{
+
+}
+
+.form-wrapper .company-address{
+    height: 760px;
+    background: #ffffff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-grp{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ################################### Form Styling ################################## */
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #ffffff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%;
+}
+
+.form-wrapper label{
+    display: block;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: '* ';
+    color: #e63946;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btm{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################### Media Queries ######################## */
+
+@media (max-width : 660px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.527);
+    }
+
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow:none;
+    }
+
+    /* .cta-left,
+    .cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    } */
+
+    /* .row{
+    height: auto;
+    width: 100%;
+    }
+
+    .row .text-box,
+    .row .img-box{
+    float: none;
+    width: 100%;
+    text-align: center;  
+    } */
+}
+
+@media (max-width: 1024px){
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    
+    .row .text-box,
+    .row .img-box{
+        float: none;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .cta-left,
+    .cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width : 525px){
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(orientation:landscape) and (max-height : 500px){
+    .header{
+        height: 90vmax;
+    }
+}
